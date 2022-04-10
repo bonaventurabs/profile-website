@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Element } from "react-scroll";
 import { techContent } from "../components/TechnologiesContent";
 
@@ -7,11 +6,6 @@ function TechnologiesPage() {
   return (
     <Element id="technologies" name="technologies">
       <div className="w-full h-12"></div>
-      {/* <div className="w-full my-20 h-auto flex flex-col justify-center items-center">
-        <h2 className="text-indigo-900 text-5xl font-semibold text-center">
-          Technologies
-        </h2>
-      </div> */}
       <div className="container mt-8 h-auto px-5 mx-auto">
         <div className="text-center mb-14">
           <h2 className="sm:text-5xl text-3xl font-medium text-indigo-900 mb-4">

@@ -15,13 +15,13 @@ function ProjectsPage() {
           {projectContent.map((p, i) => {
             return (
               <div key={i} className="rounded-lg shadow-xl text-center w-96">
-                <div className="rounded-lg w-full h-72 relative sm: mb-5 md:mb-0">
+                <div className="rounded-lg w-full aspect-[4/3] relative sm: mb-5 md:mb-0">
                   <Image
                     src={p.image}
                     alt="portfolio"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg cursor-pointer"
+                    className="rounded-lg w-full h-72"
                   />
                 </div>
                 <div className="text-center z-20 w-full">
@@ -52,7 +52,7 @@ function ProjectsPage() {
                     onClick= {() => {
                       window.location.href=p.source
                     }}
-                    disabled={p.isSourceAvailable}
+                    disabled={!p.isSourceAvailable}
                     className="w-24 text-white bg-indigo-900 text-base rounded-xl py-1 px-4 duration-200 hover:bg-black disabled:text-gray-700 disabled:bg-gray-500 disabled:opacity-70"
                   >
                     Code
@@ -61,7 +61,7 @@ function ProjectsPage() {
                     onClick= {() => {
                       window.location.href=p.visit
                     }}
-                    disabled={p.isLinkAvailable}
+                    disabled={!p.isLinkAvailable}
                     className="w-24 text-white bg-indigo-900 text-base rounded-xl py-1 px-4 duration-200 hover:bg-black disabled:text-gray-700 disabled:bg-gray-500 disabled:opacity-70"
                   >
                     Visit

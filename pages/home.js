@@ -23,15 +23,16 @@ function HomePage() {
               Bonaventura <span className="text-blue-900">Bagas</span> Sukarno
             </h1>
             <p className="text-left font-normal mb-7 flex-wrap">
-              I have interest in technology and have been studying at Institut
-              Teknologi Bandung (ITB) in Information System and Technology for the
-              last three years. Technology for the last three years. Technology
-              for the last three years. Technology for the last three years. nology for the last three years.
+              A 3rd-year undergraduate student of Information System and
+              Technology at Institut Teknologi Bandung. I am enthusiastic and
+              highly motivated about learning technology, especially backend
+              side.
             </p>
             <Link
-              activeClass="Peojects" 
-              to="projects" smooth={true} 
-              offset={50} 
+              activeClass="Projects"
+              to="projects"
+              smooth={true}
+              offset={50}
               duration={500}
               className="font-semibold text-white md:mt-10 mt-5 pt-2 bg-indigo-900 rounded-md w-40 h-12 text-lg hover:bg-black cursor-pointer"
             >
@@ -39,9 +40,7 @@ function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="h-3">
-
-        </div>
+        <div className="h-3"></div>
       </div>
     </Element>
   );
