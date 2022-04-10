@@ -2,7 +2,7 @@ export const projectContent = [
   {
     title: 'Daylee',
     description: "Daylee is a mobile application designed to provide daily need services for users, such as buying water bottle (galon), laundry, and cleaning. In this project, I am assigned to develop android app. This project is currently in development. ",
-    image: '/../public/images/portfolio/daylee.png',
+    image: '/images/portfolio/daylee.png',
     tags: ['Flutter'],
     isSourceAvailable: true,
     isLinkAvailable: false,
@@ -13,7 +13,7 @@ export const projectContent = [
   {
     title: 'RSA File-Encryption App',
     description: "This application is made to secure files using the RSA algorithm by encrypting plain file (public key) and decrypting cipher file (private key). In this application, my task is to implement the RSA algorithm into program code.",
-    image: '/../public/images/portfolio/rsa-app.png',
+    image: '/images/portfolio/rsa-app.png',
     tags: ['PyQT'],
     isSourceAvailable: true,
     isLinkAvailable: false,
@@ -24,7 +24,7 @@ export const projectContent = [
   {
     title: 'Bakery Accounting System API',
     description:"A RESTful backend system developed using FastAPI framework for bakery accounting. This API consists of several modules, such as product, order, payment-invoice, and expense.",
-    image: '/../public/images/portfolio/backery-acounting-api.png',
+    image: '/images/portfolio/backery-acounting-api.png',
     tags: ['FastAPI', 'PostgreSQL'],
     isSourceAvailable: true,
     isLinkAvailable: true,
@@ -35,7 +35,7 @@ export const projectContent = [
   {
     title: 'Cinema Self-Ticketing API',
     description:"A RESTful API was created by implementing FastAPI framework which consists of several modules for ticket booking in cinema. In this project, I have developed payment module which handles payment request and payment validation.",
-    image: '/../public/images/portfolio/cinema-api.png',
+    image: '/images/portfolio/cinema-api.png',
     tags: ['FastAPI', 'PostgreSQL'],
     isSourceAvailable: true,
     isLinkAvailable: true,
@@ -46,7 +46,7 @@ export const projectContent = [
   {
     title: 'Simple Exercise Tracker App',
     description: "Using React, Node.js, Express, and MongoDB, I have developed a simple application to track type and duration of exercise which has been done for each specific person. All data that is input through web will be managed by backend server and stored in MongoDB Atlas database.",
-    image: '/../public/images/portfolio/exercise-tracker-app.png',
+    image: '/images/portfolio/exercise-tracker-app.png',
     tags: ['MongoDB', 'Express', 'React', 'Node'],
     isSourceAvailable: true,
     isLinkAvailable: false,
@@ -57,7 +57,7 @@ export const projectContent = [
   {
     title: 'HIJI',
     description: "HIJI is a CLI card game inspired by the UNO card game. The basic rules of this game adopt the UNO card rules with some changes. In this game, i am assigned to develop multi-thread function and deck class. Deck class is used to support usability of main class.",
-    image: '/../public/images/portfolio/hiji.png',
+    image: '/images/portfolio/hiji.png',
     tags: ['Java'],
     isSourceAvailable: true,
     isLinkAvailable: false,
@@ -68,7 +68,7 @@ export const projectContent = [
   {
     title: 'SANTO TYCOON',
     description: "Santo Tycoon is a CLI computer building management game. This game begins by receiving computer assembly orders from customers. Each order must be assembled based on the components available. If the order has been completed, the player must deliver the order to the customer's house.",
-    image: '/../public/images/portfolio/santo-tycoon.png',
+    image: '/images/portfolio/santo-tycoon.png',
     tags: ['C'],
     isSourceAvailable: true,
     isLinkAvailable: false,
