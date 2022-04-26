@@ -11,6 +11,17 @@ export const projectContent = [
     id: 0,
   },
   {
+    title: 'Air Quality Monitoring',
+    description: "This system is used to measure air quality based on IoT readings (sensors). In this project, I contributed to develop IoT device and frontend system.",
+    image: '/images/portfolio/air-quality-monitoring.png',
+    tags: ['FastAPI', 'PostgreSQL', "React JS", "ESP32"],
+    isSourceAvailable: true,
+    isLinkAvailable: true,
+    source: 'https://github.com/LST11CGV/air-quality-dashboard',
+    visit: 'https://air-quality-monitorin.netlify.app/',
+    id: 1,
+  },
+  {
     title: 'RSA File-Encryption App',
     description: "This application is made to secure files using the RSA algorithm by encrypting plain file (public key) and decrypting cipher file (private key). In this application, my task is to implement the RSA algorithm into program code.",
     image: '/images/portfolio/rsa-app.png',
@@ -19,7 +30,7 @@ export const projectContent = [
     isLinkAvailable: false,
     source: 'https://github.com/jjojas/RSA.git',
     visit: '#',
-    id: 1,
+    id: 2,
   },
   {
     title: 'Bakery Accounting System API',
@@ -30,7 +41,7 @@ export const projectContent = [
     isLinkAvailable: true,
     source: 'https://github.com/bonaventurabs/API-Sistem-Akuntansi-Bakery.git',
     visit: 'https://sistem-akuntansi-bakery-api.herokuapp.com/docs',
-    id: 2,
+    id: 3,
   },
   {
     title: 'Cinema Self-Ticketing API',
@@ -41,7 +52,7 @@ export const projectContent = [
     isLinkAvailable: true,
     source: 'https://github.com/bonaventurabs/CGV-Cinema-Clone-API.git',
     visit: 'https://soakware.herokuapp.com/docs',
-    id: 3,
+    id: 4,
   },
   {
     title: 'Simple Exercise Tracker App',
@@ -52,7 +63,7 @@ export const projectContent = [
     isLinkAvailable: false,
     source: 'https://github.com/bonaventurabs/simple-exercise-tracker-app.git',
     visit: '#',
-    id: 4,
+    id: 5,
   },
   {
     title: 'HIJI',
@@ -63,7 +74,7 @@ export const projectContent = [
     isLinkAvailable: false,
     source: 'https://github.com/bonaventurabs/Tubes-OOP-HIJI.git',
     visit: '#',
-    id: 5,
+    id: 6,
   },
   {
     title: 'SANTO TYCOON',
@@ -74,6 +85,6 @@ export const projectContent = [
     isLinkAvailable: false,
     source: 'https://github.com/bonaventurabs/Tubes-Alstrukdat-Santo-Tycoon.git',
     visit: '#',
-    id: 6,
+    id: 7,
   },
 ];
