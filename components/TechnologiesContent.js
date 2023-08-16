@@ -1,5 +1,5 @@
 import { SiFastapi, SiExpress, SiNodedotjs, SiPostgresql, SiMongodb, SiFlutter, SiReact, SiQt, SiDocker, SiNextdotjs } from "react-icons/si";
-import { FaGolang } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 
 export const techContent = [
   {
