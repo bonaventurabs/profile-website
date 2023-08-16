@@ -1,4 +1,5 @@
-import { SiFastapi, SiExpress, SiNodedotjs, SiPostgresql, SiMongodb, SiFlutter, SiReact, SiQt } from "react-icons/si";
+import { SiFastapi, SiExpress, SiNodedotjs, SiPostgresql, SiMongodb, SiFlutter, SiReact, SiQt, SiDocker, SiNextdotjs } from "react-icons/si";
+import { FaGolang } from "react-icons/fa";
 
 export const techContent = [
   {
@@ -27,11 +28,23 @@ export const techContent = [
     
   },
   {
-    tech: 'PyQT',
-    icon: SiQt,
+    tech: 'React',
+    icon: SiReact,
   },
   {
-    tech: 'React JS',
-    icon: SiReact,
+    tech: 'Next.js',
+    icon: SiNextdotjs,
+  },
+  {
+    tech: 'Go',
+    icon: FaGolang,
+  },
+  {
+    tech: 'Docker',
+    icon: SiDocker,
+  },
+  {
+    tech: 'PyQT',
+    icon: SiQt,
   },
 ]

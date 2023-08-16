@@ -23,10 +23,9 @@ function HomePage() {
               Bonaventura <span className="text-blue-900">Bagas</span> Sukarno
             </h1>
             <p className="text-left font-normal mb-7 flex-wrap">
-              A 3rd-year student of Information System and
+              A fresh graduate of Information System and
               Technology at Institut Teknologi Bandung. I am enthusiastic and
-              highly motivated about learning technology, especially backend
-              side.
+              highly motivated about learning technology, especially software engineering and data.
             </p>
             <Link
               activeClass="Projects"
