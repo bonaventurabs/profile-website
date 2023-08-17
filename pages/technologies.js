@@ -21,7 +21,6 @@ function TechnologiesPage() {
               <div className="bg-white rounded block p-4 py-6 h-full items-center shadow-lg ease-in duration-200 hover:scale-110">
                 <div className="flex justify-center">
                   {< tech.icon className="text-gray-500 w-8 h-8 flex-shrink-0 hover:text-black"/>}
-                  {/* <tech.icon className="text-gray-500 w-8 h-8 flex-shrink-0 hover:text-black" /> */}
                 </div>
                 <div className="flex justify-center">
                   <span className="title-font font-medium text-indigo-900">
