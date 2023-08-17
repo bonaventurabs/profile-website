@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 function Footer() {
   return (
     <footer className={styles.footer}>
-      2023 Bonaventura Bagas
+      2023@Bonaventura Bagas
     </footer>
   );
 }
