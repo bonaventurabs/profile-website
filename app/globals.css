@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-100;
+}
+
+/* :root {
+  --color-background: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #000000;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+} */
