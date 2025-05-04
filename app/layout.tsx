@@ -53,27 +53,13 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={cx(
-        GeistSans.variable,
-        GeistMono.variable,
-        inter.variable,
-        calSans.variable
-      )}
-    >
+    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable, inter.variable, calSans.variable)}>
       <body className="bg-white text-black antialiased dark:bg-[#111010] dark:text-white">
         <Provider>
           <Navbar />
-          <main className="container mx-auto mb-40 mt-6 flex h-full min-w-0 max-w-6xl flex-auto flex-col pt-4 lg:mx-auto">
-            {children}
-          </main>
+          <main className="container mx-auto mb-40 mt-6 flex h-full min-w-0 max-w-6xl flex-auto flex-col pt-4 lg:mx-auto">{children}</main>
         </Provider>
         <Analytics />
       </body>
