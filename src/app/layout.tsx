@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
+import LocalFont from "next/font/local";
 import "./globals.css";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
+import { cn } from "@/lib/cx";
+import Navigation from "@/components/Navigation";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +17,16 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const calSans = LocalFont({
+  variable: "--font-cal-sans",
+  src: "../../public/fonts/CalSans-SemiBold.ttf",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +42,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn(
+          geistSans.variable,
+          geistMono.variable,
+          inter.variable,
+          calSans.variable,
+          "antialiased"
+        )}
       >
-        {children}
+        <ThemeProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <Navigation />
+            {children}
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
