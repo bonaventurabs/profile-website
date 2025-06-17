@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { MapPin } from "lucide-react";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -17,8 +18,8 @@ const HeroSection = () => {
           Currently working as a Software Engineer, focused on building
           innovative solutions and creating impactful user experiences.
         </p>
-        <p className="text-muted-foreground font-medium">
-          Based in Your Location
+        <p className="text-muted-foreground font-medium flex items-center justify-center">
+          <MapPin size={24} className="mr-2 inline-block" /> Jakarta, Indonesia
         </p>
         <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
           <Button

@@ -22,14 +22,15 @@ const Navigation = () => {
               <AvatarFallback>NV</AvatarFallback>
             </Avatar>
             <div className="flex flex-col">
-              <Link
-                href="/"
-                className="text-xl font-bold text-foreground leading-tight"
-              >
-                Navent
-              </Link>
-              <span className="text-xs text-muted-foreground">
-                also known as Bagas
+              <span className="text-sm text-muted-foreground">
+                Bo
+                <Link
+                  href="/"
+                  className="text-md font-normal text-foreground leading-tight"
+                >
+                  navent
+                </Link>
+                ura
               </span>
             </div>
           </div>

@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/cx";
 import Navigation from "@/components/Navigation";
 import ThemeProvider from "@/components/ThemeProvider";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,6 +57,7 @@ export default function RootLayout({
             <Sonner />
             <Navigation />
             {children}
+            <Footer />
           </TooltipProvider>
         </ThemeProvider>
       </body>
