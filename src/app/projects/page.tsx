@@ -16,7 +16,7 @@ interface Project {
   tech: string[];
   github: string;
   demo: string;
-  image?: string; // Added image support
+  image?: string;
 }
 
 const Projects = () => {
@@ -28,7 +28,7 @@ const Projects = () => {
       tech: ["React", "Node.js", "MongoDB", "Express"],
       github: "#",
       demo: "#",
-      image: "/photo-1486312338219-ce68d2c6f44d", // Example image
+      image: "/photo-1486312338219-ce68d2c6f44d",
     },
     {
       title: "Task Management App",
@@ -37,7 +37,7 @@ const Projects = () => {
       tech: ["TypeScript", "React", "Firebase", "Tailwind CSS"],
       github: "#",
       demo: "#",
-      image: "/photo-1498050108023-c5249f4df085", // Example image
+      image: "/photo-1498050108023-c5249f4df085",
     },
   ];
 

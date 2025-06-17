@@ -22,20 +22,20 @@ const NotFound = () => {
         <div className="absolute top-40 left-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-secondary/10 blur-3xl"></div>
         <div className="relative z-10 text-center space-y-6 px-4 max-w-3xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-bold text-foreground leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
             404
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+          <h2 className="text-xl md:text-2xl font-semibold text-foreground">
             Page Not Found
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Oops! The page you&apos;re looking for doesn&apos;t exist. It might
             have been moved, deleted, or you entered the wrong URL.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
-              size="lg"
+              size="md"
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               <Link href="/">Go Home</Link>
@@ -43,7 +43,7 @@ const NotFound = () => {
             <Button
               asChild
               variant="outline"
-              size="lg"
+              size="md"
               className="border-border hover:bg-accent"
             >
               <Link href="/projects">View Projects</Link>
