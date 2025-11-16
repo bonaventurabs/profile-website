@@ -1,16 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import { JSX } from "react";
+import React from "react";
 
-function Badge({
-  name,
-  path,
-  icon,
-}: {
+type BadgeInfo = {
   name: string;
   path: string;
-  icon?: string | JSX.Element;
-}) {
+  icon?: string | React.ReactNode;
+};
+
+function Badge({ name, path, icon }: BadgeInfo) {
   return (
     <Link
       href={path}
@@ -35,7 +33,7 @@ function Badge({
 }
 
 // List of badges
-const badgeList = [
+const badgeList: BadgeInfo[] = [
   { name: "Next.js", path: "https://nextjs.org/", icon: "/next.js.svg" },
   {
     name: "Tailwind CSS",
@@ -68,25 +66,39 @@ const badgeList = [
   },
 ];
 
-// Dynamically generate and export badge components
-const badgeComponents = badgeList.reduce((acc, badge) => {
-  const componentName = `${badge.name.replace(/\s+/g, "")}Badge`;
-  acc[componentName] = () => (
-    <Badge name={badge.name} path={badge.path} icon={badge.icon} />
-  );
-  return acc;
-}, {} as Record<string, () => JSX.Element>);
+// Helper to normalize keys
+const normalizeKey = (name: string) =>
+  name.replace(/[\s\.\-]/g, "").toLowerCase();
+
+// Build badge components and lookup
+const badgeComponents: Record<string, React.FC> = {};
+const badgeLookup: Record<string, React.ReactNode> = {};
+
+badgeList.forEach((badge) => {
+  const key = normalizeKey(badge.name);
+  const Comp = () => <Badge {...badge} />;
+  badgeComponents[`${key}badge`] = Comp;
+  badgeLookup[key] = <Badge {...badge} />;
+});
+
+// Exported badge components (named)
+export const {
+  nextjsbadge: NextJSBadge,
+  tailwindcssbadge: TailwindCSSBadge,
+  typescriptbadge: TypescriptBadge,
+  javascriptbadge: JavascriptBadge,
+  gobadge: GoBadge,
+  pythonbadge: PythonBadge,
+  reactbadge: ReactBadge,
+  postgresqlbadge: PostgresBadge,
+  dockerbadge: DockerBadge,
+  firebasebadge: FirebaseBadge,
+} = badgeComponents;
+
+// Lookup by key (case-insensitive, normalized)
+export function getBadgeByKey(key: string): React.ReactNode {
+  const normalized = normalizeKey(key);
+  return badgeLookup[normalized] || <Badge name={key} path="#" />;
+}
 
 export default Badge;
-export const {
-  NextJSBadge,
-  TailwindCSSBadge,
-  TypescriptBadge,
-  JavascriptBadge,
-  GoBadge,
-  PythonBadge,
-  ReactBadge,
-  PostgresBadge,
-  DockerBadge,
-  FirebaseBadge,
-} = badgeComponents;

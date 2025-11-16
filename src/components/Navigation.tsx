@@ -16,7 +16,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-4">
             <Avatar className="h-10 w-10 border border-border">
               <AvatarImage
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=64&h=64"
+                src="https://avatars.githubusercontent.com/u/59414359?v=4"
                 alt="Navent"
               />
               <AvatarFallback>NV</AvatarFallback>
@@ -26,7 +26,10 @@ const Navigation = () => {
                 Bo
                 <Link
                   href="/"
-                  className="text-md font-normal text-foreground leading-tight"
+                  className="relative text-md font-normal text-foreground leading-tight 
+                  after:content-[''] after:absolute after:left-0 after:bottom-0 
+                  after:w-0 after:h-[1px] after:bg-foreground after:transition-all after:duration-300 
+                  hover:after:w-full"
                 >
                   navent
                 </Link>

@@ -46,9 +46,8 @@ const HeroSection = () => {
 export default function Home() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* <Navigation /> */}
       <HeroSection />
-      {/* <OverviewSection /> */}
+      {/* TODO: EventAndActivitiesSection */}
     </div>
   );
 }
