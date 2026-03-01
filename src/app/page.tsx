@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { MapPin } from "lucide-react";
+import { ChevronDown, MapPin } from "lucide-react";
 import Link from "next/link";
+import PhotoGrid from "@/components/PhotoGrid";
 
 const HeroSection = () => {
   return (
@@ -27,7 +28,7 @@ const HeroSection = () => {
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground"
           >
-            <Link href="#projects">Explore My Work</Link>
+            <Link href="/experience">See My Experience</Link>
           </Button>
           <Button
             asChild
@@ -39,6 +40,17 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
+
+      {/* Scroll down indicator */}
+      <a
+        href="#milestones"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"
+      >
+        <span className="text-xs font-medium tracking-widest uppercase">
+          Scroll down
+        </span>
+        <ChevronDown size={20} className="animate-float" />
+      </a>
     </div>
   );
 };
@@ -47,7 +59,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <HeroSection />
-      {/* TODO: EventAndActivitiesSection */}
+      <PhotoGrid />
     </div>
   );
 }
